@@ -1,0 +1,47 @@
+{
+"name": "tos-ts",
+"displayName": "thinkScript",
+"description": "Syntax highlighting for the thinkScript language for thinkorswim trading platform",
+"version": "1.1.0",
+"publisher": "LethalArts",
+"homepage": "https://github.com/jmbeekman/vsc-thinkscript-extension",
+"icon": "images/tosicon.jpg",
+"repository": {
+    "type": "git",
+    "url": "https://github.com/jmbeekman/vsc-thinkscript-extension.git"
+},
+"engines": {
+    "vscode": "^1.58.0"
+},
+"categories": [
+    "Programming Languages"
+],
+"contributes": {
+    "languages": [
+            {
+            "id": "thinkscript",
+            "aliases": [
+                    "thinkScript",
+                    "thinkscript"
+            ],
+            "extensions": [
+                    ".tosts"
+            ],
+            "configuration": "./language-configuration.json"
+            }
+    ],
+    "grammars": [
+            {
+            "language": "thinkscript",
+            "scopeName": "source.tosts",
+            "path": "./syntaxes/thinkscript.tmLanguage.json"
+            }
+    ]
+},
+"contributors": [
+    {
+    "name" : "Derek Ziemba",
+    "url" : "https://github.com/DerekZiemba/vsc-thinkscript-extension"
+    }
+]
+}
