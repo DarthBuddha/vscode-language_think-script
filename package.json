@@ -1,6 +1,6 @@
 {
-"name": "tos-ts",
-"displayName": "thinkScript",
+"name": "tos-thinkscript",
+"displayName": "thinkscript",
 "description": "Syntax highlighting for the thinkScript language for thinkorswim trading platform",
 "version": "1.0.0",
 "publisher": "Darth Buddha",
@@ -11,7 +11,7 @@
     "url": "https://github.com/DarthBuddha/vsc-ThinkScript-Language.git"
 },
 "engines": {
-    "vscode": "^1.82.2"
+    "vscode": "^1.82.0"
 },
 "categories": [
     "Programming Languages"
@@ -22,7 +22,8 @@
             "id": "thinkscript",
             "aliases": [
                     "thinkScript",
-                    "thinkscript"
+                    "thinkscript",
+                    "ThinkScript"
             ],
             "extensions": [
                     ".ts"
