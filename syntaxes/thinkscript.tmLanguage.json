@@ -1,7 +1,7 @@
 {
 "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 "name": "thinkScript",
-"scopeName": "source.tosts",
+"scopeName": "source.ts",
 "patterns": [
     { "include": "#code" }
 ],
@@ -21,7 +21,7 @@
 "comments": {
     "patterns": [
         {
-        "name": "comment.line.number-sign.tosts",
+        "name": "comment.line.number-sign.ts",
         "begin": "#",
         "end": "\n"
         }
@@ -30,64 +30,64 @@
 "keywords": {
     "patterns": [
         {
-        "name": "keyword.control.tosts",
+        "name": "keyword.control.ts",
         "match": "\\b(bar|bars|profile|rec|reference|script)\\b"
         },
         {
-        "name": "constant.language.tosts",
+        "name": "constant.language.ts",
         "match": "\\b(true|false|default|yes|no)\\b"
         },
         {
-        "name": "keyword.control.loop.tosts",
+        "name": "keyword.control.loop.ts",
         "match": "\\b(do|while|fold|to|from|with)\\b"
         },
         {
-        "name": "keyword.control.conditional.tosts",
+        "name": "keyword.control.conditional.ts",
         "match": "\\b(if|case|then|else)\\b"
         },
         {
-        "name": "keyword.control.switch.tosts",
+        "name": "keyword.control.switch.ts",
         "match": "\b(switch)\b"
         },
         {
-        "name": "keyword.operator.logical.tosts keyword.operator.logical.comparison.tosts",
+        "name": "keyword.operator.logical.ts keyword.operator.logical.comparison.ts",
         "match": "(?<!\\.)\\b(and|not|or|equal|equals|is|greater than|less than|within|between|above|below|ago|crosses)\\b(?![?!])"
         },
         {
         "match": "\\b(def)\\s+([_[:alpha:]][_[:alnum:]]+)\\s*(\\=)",
         "captures": {
-            "1": { "name": "keyword.control.def.tosts" },
-            "2": { "name": "entity.name.variable.local.tosts variable.other.definition.tosts variable.other.constant.tosts" },
-            "3": { "name": "keyword.operator.assignment.tosts" }
+            "1": { "name": "keyword.control.def.ts" },
+            "2": { "name": "entity.name.variable.local.ts variable.other.definition.ts variable.other.constant.ts" },
+            "3": { "name": "keyword.operator.assignment.ts" }
         }
         },
         {
         "match": "\\b(def)\\s+([_[:alpha:]][_[:alnum:]]+)\\b",
         "captures": {
             "1": { "name": "keyword.control.def" },
-            "2": { "name": "entity.name.variable.local.tosts variable.other.definition.tosts variable.other.definition.readwrite.tosts" },
-            "3": { "name": "keyword.operator.assignment.tosts" }
+            "2": { "name": "entity.name.variable.local.ts variable.other.definition.ts variable.other.definition.readwrite.ts" },
+            "3": { "name": "keyword.operator.assignment.ts" }
         }
         },
         {
         "match": "\\b(?:(input))\\b\\s*\\b([_[:alpha:]][_[:alnum:]]*)\\b",
         "captures": {
-            "1": { "name": "keyword.other.const.tosts keyword.control.parameter.tosts" },
-            "2": { "name": "entity.name.variable.local.tosts variable.parameter.tosts" }
+            "1": { "name": "keyword.other.const.ts keyword.control.parameter.ts" },
+            "2": { "name": "entity.name.variable.local.ts variable.parameter.ts" }
         }
         },
         {
         "match": "\\b(?:(declare))\\b\\s*\\b([_[:alpha:]][_[:alnum:]]*)\\b",
         "captures": {
-            "1": { "name": "keyword.preprocessor.define.tosts keyword.control.directive.define.tosts" },
-            "2": { "name": "entity.name.variable.preprocessor.symbol.tosts" }
+            "1": { "name": "keyword.preprocessor.define.ts keyword.control.directive.define.ts" },
+            "2": { "name": "entity.name.variable.preprocessor.symbol.ts" }
         }
         },
         {
         "match": "\\b(?:(plot))\\b\\s*\\b([_[:alpha:]][_[:alnum:]]*)\\b",
         "captures": {
-            "1": { "name": "storage.modifier.plot.tosts keyword.control.yield.plot.tosts" },
-            "2": { "name": "entity.name.variable.local.tosts variable.other.definition.tosts" }
+            "1": { "name": "storage.modifier.plot.ts keyword.control.yield.plot.ts" },
+            "2": { "name": "entity.name.variable.local.ts variable.other.definition.ts" }
         }
         }
     ]
@@ -204,7 +204,7 @@
     "number": {
     "patterns": [
         {
-        "name": "constant.numeric.tosts",
+        "name": "constant.numeric.ts",
         "match": "\\b[0-9]+\\.?[0-9]*\\b"
         }
     ]
@@ -213,52 +213,52 @@
     "patterns": [
         {
         "match": "(==|!=|<=|>=|<>|<|>)",
-        "name": "keyword.operator.comparison.tosts"
+        "name": "keyword.operator.comparison.ts"
         },
         {
         "match": "(?<!=|!)(=)(?!=)",
-        "name": "keyword.operator.assignment.tosts"
+        "name": "keyword.operator.assignment.ts"
         },
         {
         "match": "(!|\\+|-|\/|\\*|%)",
-        "name": "keyword.operator.arithmetic.tosts"
+        "name": "keyword.operator.arithmetic.ts"
         },
         {
         "match": "\\&|\\|",
-        "name": "keyword.operator.bitwise.tosts"
+        "name": "keyword.operator.bitwise.ts"
         },
         {
         "match": "\\!|&&|\\|\\|",
-        "name": "keyword.operator.logical.tosts"
+        "name": "keyword.operator.logical.ts"
         },
         {
         "match": "=",
-        "name": "punctuation.separator.equals.tosts"
+        "name": "punctuation.separator.equals.ts"
         }
     ]
     },
     "punctuation": {
     "patterns": [
         {
-        "name": "punctuation.separator.delimiter.tosts punctuation.separator.comma.tosts",
+        "name": "punctuation.separator.delimiter.ts punctuation.separator.comma.ts",
         "match": ","
         },
         {
-        "name": "punctuation.terminator.statement.tosts",
+        "name": "punctuation.terminator.statement.ts",
         "match": ";"
         },
         {
-        "name": "punctuation.accessor.tosts",
+        "name": "punctuation.accessor.ts",
         "match": "(?<=\\b\\w+)\\."
         },
         {
         "begin": "(?<=\\b\\w+)\\(",
         "beginCaptures": {
-            "0": { "name": "function.punctuation.parenthesis.open.tosts" }
+            "0": { "name": "function.punctuation.parenthesis.open.ts" }
         },
         "end": "\\)",
         "endCaptures": {
-            "0": { "name": "function.punctuation.parenthesis.close.tosts" }
+            "0": { "name": "function.punctuation.parenthesis.close.ts" }
         },
         "patterns": [
             {
@@ -269,11 +269,11 @@
         {
         "begin": "\\(",
         "beginCaptures": {
-            "0": { "name": "punctuation.parenthesis.open.tosts"  }
+            "0": { "name": "punctuation.parenthesis.open.ts"  }
         },
         "end": "\\)",
         "endCaptures": {
-            "0": { "name": "punctuation.parenthesis.close.tosts" }
+            "0": { "name": "punctuation.parenthesis.close.ts" }
         },
         "patterns": [
             {
@@ -284,13 +284,13 @@
         {
         "begin": "(\\b\\w+\\b)(\\[)",
         "beginCaptures": {
-            "1": { "name": "storage.type.array.tosts storage.type.object.array.tosts variable.array variable.object.array.tosts" },
-            "2": { "name": "punctuation.begin.bracket.square.tosts punctuation.bracket.square.open.tosts array.indexer.bracket.square.open.tosts" }
+            "1": { "name": "storage.type.array.ts storage.type.object.array.ts variable.array variable.object.array.ts" },
+            "2": { "name": "punctuation.begin.bracket.square.ts punctuation.bracket.square.open.ts array.indexer.bracket.square.open.ts" }
         },
         "end": "\\s*(\\b[0-9]+\\b)\\s*(\\])",
         "endCaptures": {
-            "1": { "name": "constant.numeric.integer.tosts" },
-            "2": { "name": "punctuation.end.bracket.square.tosts punctuation.bracket.square.close.tosts array.indexer.bracket.square.close.tosts" }
+            "1": { "name": "constant.numeric.integer.ts" },
+            "2": { "name": "punctuation.end.bracket.square.ts punctuation.bracket.square.close.ts array.indexer.bracket.square.close.ts" }
         },
         "patterns": [
             {
@@ -301,12 +301,12 @@
     ]
     },
     "strings": {
-        "name": "string.quoted.double.tosts",
+        "name": "string.quoted.double.ts",
         "begin": "\"",
         "end": "\"",
         "patterns": [
             {
-            "name": "constant.character.escape.tosts",
+            "name": "constant.character.escape.ts",
             "match": "\\\\."
             }
         ]
@@ -315,66 +315,66 @@
     "patterns": [
         {
         "match": "\\b(ask|bid|close|high|hl2|hlc3|imp_volatility|low|ohlc4|open|open_interest|tick_count|volume|vwap)\\b",
-        "name": "support.function.builtin.tosts"
+        "name": "support.function.builtin.ts"
         },
         {
-        "name": "support.type.primitive.tosts support.class.builtin.tosts support.class.tosts",
+        "name": "support.type.primitive.ts support.class.builtin.ts support.class.ts",
         "match": "\\b(Any|Boolean|Double|Int|String|Symbol)(?:(?=\\.))"
         },
         {
-        "name": "support.type.primitive.tosts",
+        "name": "support.type.primitive.ts",
         "match": "(?i)\\b(Any|Boolean|Double|Int|String|Symbol)\\b"
         },
         {
-        "name": "storage.type.interface.tosts support.class.builtin.tosts",
+        "name": "storage.type.interface.ts support.class.builtin.ts",
         "match": "\\b(CustomColor|IDataHolder|AggregationPeriod|Alert|AverageType|ChartType|Color|CrossingDirection|Curve|Double|EarningTime|Events|FiscalPeriod|FundamentalType|MonkeyVolumeShowStyle|NumberFormat|OptionClass|OrderType|PaintingStrategy|PricePerRow|PriceType|ProfitLossMode|Sound)(?:(?=\\.))"
         },
         {
-        "name": "support.type.builtin.tosts support.class.tosts",
+        "name": "support.type.builtin.ts support.class.ts",
         "match": "\\b(CustomColor|IDataHolder|AggregationPeriod|Alert|AverageType|ChartType|Color|CrossingDirection|Curve|Double|EarningTime|Events|FiscalPeriod|FundamentalType|MonkeyVolumeShowStyle|NumberFormat|OptionClass|OrderType|PaintingStrategy|PricePerRow|PriceType|ProfitLossMode|Sound)\\b"
         },
         {
-        "name": "support.function.math.tosts",
+        "name": "support.function.math.ts",
         "match": "\\b(AbsValue|ACos|ASin|ATan|Ceil|Cos|Crosses|Exp|Floor|IsInfinite|IsNaN|Lg|Log|Max|Min|Power|Random|Round|RoundDown|RoundUp|Sign|Sin|Sqr|Sqrt|Sum|Tan|TotalSum|absValue|aCos|aSin|aTan|isInfinite|isNaN|roundDown|roundUp|totalSum)\\b(?=\\()"
         },
         {
-        "name": "support.function.option-related.tosts entity.name.function.tosts entity.name.function.tosts",
+        "name": "support.function.option-related.ts entity.name.function.ts entity.name.function.ts",
         "match": "\\b(?i)(Delta|Gamma|GetATMOption|GetDaysToExpiration|GetNextExpirationOption|GetNextITMOption|GetNextOTMOption|GetStrike|GetUnderlyingSymbol|IsEuropean|IsOptionable|IsPut|OptionPrice|Rho|Theta|Vega)\\b(?=\\()"
         },
         {
-        "name": "support.function.technical-analysis.tosts entity.name.function.tosts",
+        "name": "support.function.technical-analysis.ts entity.name.function.ts",
         "match": "\\b(?i)(AccumDist|Average|BodyHeight|EMA2|ExpAverage|FastKCustom|GetMarketMakerMove|GetMaxValueOffset|GetMinValueOffset|Highest|HighestAll|HighestWeighted|IsAscending|IsDescending|IsDoji|IsLongBlack|IsLongWhite|Lowest|LowestAll|LowestWeighted|Median|MidBodyVal|MoneyFlow|MovingAverage|TrueRange|Ulcer|WildersAverage|WMA)\\b(?=\\()"
         },
         {
-        "name": "support.function.statistical.tosts entity.name.function.tosts",
+        "name": "support.function.statistical.ts entity.name.function.ts",
         "match": "\\b(?i)(Correlation|Covariance|Inertia|InertiaAll|LinDev|StDev|StDevAll|StErr|StErrAll)\\b(?=\\()"
         },
         {
-        "name": "support.function.datetime.tosts entity.name.function.tosts",
+        "name": "support.function.datetime.ts entity.name.function.ts",
         "match": "\\b(?i)(CountTradingDays|DaysFromDate|DaysTillDate|GetDay|GetDayOfMonth|GetDayOfWeek|GetLastDay|GetLastMonth|GetLastWeek|GetLastYear|GetMonth|GetTime|GetWeek|GetYear|GetYYYYMMDD|RegularTradingEnd|RegularTradingStart|SecondsFromTime|SecondsTillTime)\\b(?=\\()"
         },
         {
-        "name": "support.function.corporate-actions.tosts entity.name.function.tosts",
+        "name": "support.function.corporate-actions.ts entity.name.function.ts",
         "match": "\\b(?i)(GetActualEarnings|GetDividend|GetEstimatedEarnings|GetEventOffset|GetSplitDenominator|GetSplitNumerator|HasConferenceCall|HasEarnings)\\b(?=\\()"
         },
         {
-        "name": "support.function.appearance.tosts entity.name.function.tosts",
+        "name": "support.function.appearance.ts entity.name.function.ts",
         "match": "\\b(?i)(AddChartBubble|AddCloud|AddLabel|AddVerticalLine|AssignBackgroundColor|AssignNormGradientColor|AssignPriceColor|AssignValueColor|Color|CreateColor|DefineColor|DefineGlobalColor|EnableApproximation|GetColor|GlobalColor|Hide|HideBubble|HidePricePlot|HideTitle|SetChartType|SetDefaultColor|SetHiding|SetLineWeight|SetPaintingStrategy|SetStyle|TakeValueColor)\\b(?=\\()"
         },
         {
-        "name": "support.function.portfolio.tosts entity.name.function.tosts",
+        "name": "support.function.portfolio.ts entity.name.function.ts",
         "match": "\\b(?i)(GetAveragePrice|GetNetLiq|GetOpenPL|GetQuantity|GetTotalCash)\\b(?=\\()"
         },
         {
-        "name": "support.function.profiles.tosts entity.name.function.tosts",
+        "name": "support.function.profiles.ts entity.name.function.ts",
         "match": "\\b(?i)(DataProfile|GetHighest|GetHighestValueArea|GetLowest|GetLowestValueArea|GetPointOfControl|MonkeyBars|Show|TimeProfile|VolumeProfile)\\b(?=\\()"
         },
         {
-        "name": "support.function.fundamentals.tosts entity.name.function.tosts",
+        "name": "support.function.fundamentals.ts entity.name.function.ts",
         "match": "\\b(?i)(BookValuePerShare|CurrentRatio|DividendPayout|DividendsPerShareTTM|EarningsPerShareTTM|FinancialLeverage|FixedChargeCoverageRatio|FreeCashFlowPerShare|GrossProfitMargin|InterestRate|InventoryTurnover|LongTermDebtToCapital|NetProfitMargin|OperatingProfitMargin|QuickRatio|ReturnOnAssets|ReturnOnEquity|SalesPerShare|TaxRate|TotalAssetTurnover)\\b(?=\\()"
         },
         {
-        "name": "support.function.utility.tosts entity.name.function.tosts",
+        "name": "support.function.utility.ts entity.name.function.ts",
         "match": "\\b(AddOrder|Alert|AsDollars|AsPercent|AsPrice|Assert|AsText|BarNumber|Between|CompoundValue|Concat|EntryPrice|First|FPL|Fundamental|GetAggregationPeriod|GetInterestRate|GetPriceType|GetSymbol|GetSymbolPart|GetValue|GetYield|HasContractChangeEvent|If|TickSize|TickValue|addOrder|asDollars|asPercent|asPrice|asText|barNumber|compoundValue|entryPrice|getAggregationPeriod|getInterestRate|getPriceType|getSymbol|getSymbolPart|getValue|getYield|hasContractChangeEvent|tickSize|tickValue)\\b(?=\\()"
         }
     ]
