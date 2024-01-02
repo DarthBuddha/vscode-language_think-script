@@ -1,3 +1,0 @@
-# vsc-ThinkScript-Language
-
----

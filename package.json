@@ -1,0 +1,46 @@
+{
+    "name": "think-or-swim_vscode-language",
+    "displayName": "thinkScript",
+    "description": "Syntax highlighting for the thinkScript language used in the think or swim trading platform",
+    "version": "1.0.0",
+    "publisher": "Darth Buddha",
+    "homepage": "https://github.com/DarthBuddha/vscode-language_think-script",
+    "icon": "logo.png",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "think-script",
+                "aliases": [
+                    "think-Script",
+                    "Think-script",
+                    "thinkscript",
+                    "ThinkScript"
+                ],
+                "extensions": [
+                    ".ts"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "think-script",
+                "scopeName": "source.ts",
+                "path": "./syntaxes/think-script.tmLanguage.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DarthBuddha/vscode-language_think-script.git"
+    },
+    "devDependencies": {
+        "vsce": "^2.22.0"
+    }
+}

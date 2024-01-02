@@ -1,3 +1,10 @@
 node_modules
 *.vsixmanifest
 .env
+
+# Folders
+.developer/
+.git/
+.github/
+.venv/
+
